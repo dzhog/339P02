@@ -2,13 +2,15 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+@import url('https://fonts.googleapis.com/css?family=Avenir');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 *, *::after, *::before {
     box-sizing:border-box;
 }
 
 body {
-  font-family: "Garamond";
+  font-family: "Lato", sans-serif;
   padding: 2rem;
   background-color: rgb(255,244,230);
   font-color: rgb(60,47,47);
