@@ -18,6 +18,10 @@ body {
   font-size: 1.5rem;
 }
 
+button{
+  text-transform: uppercase;
+}
+
 .button-navi{
   letter-spacing: 0.15rem;
   padding-top:1rem;
