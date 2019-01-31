@@ -17,7 +17,7 @@ body {
 }
 
 .totals{
-  font-size: 1.5rem;
+  font-size: 1.5rem;  
 }
 
 button{
@@ -146,6 +146,8 @@ button{
   display: inline-block;
   font-size: .75rem;
   padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: white;
   background-color: rgb(66,50,50);
   text-decoration: none;
