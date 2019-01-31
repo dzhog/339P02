@@ -309,6 +309,24 @@ a{
     text-decoration: none;
 }
 
+nav{
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+nav a{
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+nav a:hover, nav a:focus {
+  color: #eee3ce;
+  text-decoration: none;
+}
+
+
 nav a:hover, nav a:focus {
   color: rgb(75,56,50);
   text-decoration: underline;
@@ -325,22 +343,6 @@ code {
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
-
-/* Styling for the navigation button */
-.button-nav {
-  display: inline-block;
-  padding: 0.5rem;
-  color: white;
-  background-color: rgb(50,50,50);
-  text-decoration: none;
-  transition-property: background-color; 
-  transition-duration: 1s;
-}
-
-.button-nav:hover, .button-nav:focus {
-  background-color: rgb(200,200,200);
-}
-
 
 
 /* 
