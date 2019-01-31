@@ -144,7 +144,7 @@ ul{
 
 button{
   display: inline-block;
-  font-size: 1rem;
+  font-size: .75rem;
   padding: 1rem;
   color: white;
   background-color: rgb(66,50,50);
