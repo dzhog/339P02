@@ -1,0 +1,349 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+*, *::after, *::before {
+    box-sizing:border-box;
+}
+
+body {
+  font-family: "Garamond";
+  padding: 2rem;
+  background-color: rgb(255,244,230);
+  font-color: rgb(60,47,47);
+}
+
+.totals{
+  font-size: 1.5rem;
+}
+
+.button-navi{
+  letter-spacing: 0.15rem;
+  padding-top:1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.header{
+  font-size: 5rem;
+  font-style: italic;
+  position: fixed;
+}
+
+header{
+  padding-bottom: 3rem;
+}
+
+.left{
+  margin-top: 5rem;
+}
+
+.right{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20rem;
+}
+
+.checkright{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20rem;
+}
+
+.right div{
+  padding: 2rem;
+  border-left-style: dashed;
+  border-width: .1rem;
+  border-color: #9b6d4f;
+}
+
+.pagenav{
+  position:fixed;
+}
+
+.button-navi:hover, .button-navi:focus{
+
+}
+
+.grid{
+  flex:1;
+  max-width: 25rem;
+}
+
+.grid2{
+  flex:2;
+  padding-right: 5rem;
+  min-width: 40rem;
+}
+
+.grid3{
+  transform: translate(0,-6rem);
+  flex:1;
+  font-size: 1.5rem;
+  border-left-width: .1rem;
+  border-left-style: dashed;
+  min-width: 25rem;
+  max-width: 30rem;
+}
+
+ul li{
+}
+
+li a{
+  display: block;
+  padding: 0.5rem 2px;
+  text-decoration: none;
+}
+
+li a:hover {
+
+}
+
+ul{
+  background-color: rgb(255,250,240);
+  border-style: dashed;
+  border-radius: 0rem;
+  border-color: rgb(66,50,50);
+  border-width: 0.1rem;
+  list-style-type: none;
+  width:15rem;
+  margin: 0;
+  padding: 1.5rem;
+
+}
+
+.element {
+  max-width: 50%;
+  padding-bottom: 3rem;
+  padding-top:3rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.textlink{
+  text-decoration: underline;
+}
+
+.billbutt{
+  margin-left:86%; 
+  margin-right: 0;
+  margin-top: 0;
+}
+
+button{
+  display: inline-block;
+  font-family: garamond;
+  font-size: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: rgb(66,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 1s;
+  border-style: none;
+}
+
+.edit, .remove{
+  padding:5px 10px;
+  background-color: rgb(150, 120, 110);
+}
+
+.imagelink:hover{
+  opacity: 0.7;
+  transition-duration: 0.5s;
+}
+
+button:hover, button:focus{
+  background-color: rgb(170,130,110);
+}
+
+.billing{
+  align-content: center;
+  padding:2rem;
+
+  max-width: 30rem;
+  min-width: 30rem;
+  margin-right: 5rem;
+  box-sizing:border-box;
+  border-color: rgb(100,45,45);
+  
+}
+
+input:hover{
+  background-color: rgb(230,210,200);
+}
+
+.months{
+  width:57%;
+  padding:10px 10px;
+  margin:15px 0;
+  box-sizing:border-box;
+}
+.year{
+  width:40%;
+  padding:10px 10px;
+  margin:15px 0;
+  float: right;
+  box-sizing:border-box;
+
+}
+
+
+input[name=fn]{
+  width:49%;
+  padding:10px 10px;
+  margin:15px 0;
+  box-sizing:border-box;
+}
+
+input[name=ln]{
+  width:49%;
+  padding:10px 10px;
+  margin:15px 0;
+  box-sizing:border-box;
+  float:right;
+}
+
+input[name=email]{
+  width:100%;
+  padding:10px 10px;
+  margin:15px 0;
+  box-sizing:border-box;
+}
+
+input[name=cc]{
+  width:80%;
+  padding:10px 10px;
+  margin:15px 0;
+  box-sizing:border-box;
+}
+
+input[name=ccv]{
+  align-self: right;
+  width:17%;
+  padding:10px 10px;
+  margin:15px 0;
+  float: right;
+  box-sizing:border-box;
+}
+
+input[name=ccn]{
+  width:100%;
+  padding:10px 10px;
+  margin:15px 0;
+  box-sizing:border-box;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+.bodyp {
+  max-width: 75%;
+  padding:20px;
+  line-height: 1.7rem;
+  margin-top: 0;
+}
+
+.prices{
+  text-align: right;
+}
+
+.rightalign{
+  font-size: 1.25rem;
+  text-align: right;
+}
+
+.add{
+  transform: translate(0rem, -4.5rem);
+}
+
+.rightalignbutt{
+  float:right;
+}
+
+.item{
+  border-top-style: solid;
+
+  border-color: rgb(100,45,45);
+}
+
+.itemprice{
+  width:75%;
+  padding:0px;
+  text-align: right;
+}
+
+p{
+  padding-top: .5rem;
+
+}
+
+img{
+  width:20rem;
+}
+
+a{
+    color: rgb(133,68,66);
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  color: rgb(75,56,50);
+  text-decoration: underline;
+  transition-duration: .1s;
+}
+
+code {
+  background-color: rgb(255);
+  padding: 0.5rem;
+  display: block;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 1s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+}
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
