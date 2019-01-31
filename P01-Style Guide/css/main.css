@@ -146,8 +146,8 @@ button{
   display: inline-block;
   font-size: .75rem;
   padding: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   color: white;
   background-color: rgb(66,50,50);
   text-decoration: none;
