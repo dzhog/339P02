@@ -352,6 +352,11 @@ code {
    background-position: center;
 }
 
+.light-text{
+  color: rgb(255,244,230);
+  padding-top: .5rem;
+}
+
 
 
 
