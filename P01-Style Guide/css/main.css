@@ -348,7 +348,8 @@ code {
    background: url('../menu-img.jpg');
    background-repeat: no-repeat;
    background-size:cover;
-   min-height:700px;
+   min-height:800px;
+   background-position: center;
 }
 
 
