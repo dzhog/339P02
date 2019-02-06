@@ -22,6 +22,7 @@ body {
 
 button{
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button-navi{
@@ -152,7 +153,7 @@ button{
   background-color: rgb(66,50,50);
   text-decoration: none;
   transition-property: background-color; 
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   border-style: none;
 }
 
@@ -164,6 +165,7 @@ button{
 .imagelink:hover{
   opacity: 0.7;
   transition-duration: 0.5s;
+
 }
 
 button:hover, button:focus{
@@ -183,7 +185,7 @@ button:hover, button:focus{
 }
 
 input:hover{
-  background-color: rgb(230,210,200);
+
 }
 
 .months{
@@ -252,7 +254,6 @@ h2 {
 }
 
 h3 {
-  font-style: italic;
   margin-top: 1rem;
 }
 
@@ -305,6 +306,10 @@ img{
   width:20rem;
 }
 
+img:hover{
+  transition-duration: 0.5s;
+}
+
 a{
     color: rgb(133,68,66);
     text-decoration: none;
@@ -330,8 +335,7 @@ nav a:hover, nav a:focus {
 
 nav a:hover, nav a:focus {
   color: rgb(75,56,50);
-  text-decoration: underline;
-  transition-duration: .1s;
+  transition-duration: .5s;
 }
 
 code {
