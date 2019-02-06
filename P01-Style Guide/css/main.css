@@ -344,6 +344,15 @@ code {
   display: block;
 }
 
+.home{
+   background: url('../menu-img.jpg');
+   background-repeat: no-repeat;
+   background-size:cover;
+   min-height:700px;
+}
+
+
+
 
 /* 
   INTERACTIVE ELEMENTS -------------------
