@@ -337,6 +337,8 @@ nav{
    padding-bottom: 1.5rem;
    padding-top: 1.5rem;
    text-align: center;
+   /*z-index added to make nav bar on top of all other elements*/
+   z-index: 500;
    width: 100%;
    background: rgb(255,244,230); 
    position: fixed;
