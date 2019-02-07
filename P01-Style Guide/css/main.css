@@ -276,7 +276,6 @@ h4 {
 
 .bodyp {
   max-width: 75%;
-  padding:20px;
   line-height: 1.7rem;
   margin-top: 0;
 }
@@ -312,6 +311,7 @@ h4 {
 
 p{
   padding-top: .5rem;
+   margin-top: 0px;
 
 }
 
@@ -413,10 +413,6 @@ code {
     background-size: cover;
 }
 
-p{
-  margin-top: 0px;
-}
-
 .panel.first {
     background: url('../menu-img.jpg');
 }
@@ -428,7 +424,7 @@ p{
 }
 
 .product-img{
-  
+
   )
 
 
