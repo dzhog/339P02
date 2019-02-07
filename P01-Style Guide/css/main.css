@@ -77,9 +77,14 @@ header{
 
 .right div{
   padding: 2rem;
-  border-left-style: dashed;
+
   border-width: .1rem;
   border-color: #9b6d4f;
+}
+
+.header{
+  font-size: 2rem;
+  letter-spacing: .2rem;
 }
 
 .pagenav{
