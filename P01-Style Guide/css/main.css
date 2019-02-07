@@ -418,16 +418,6 @@ code {
 .panel.first {
     background: url('../menu-img.jpg');
 }
-.panel.second {
-    background: url('../menu-img.jpg');
-}
-.panel.third {
-    background: url('../menu-img.jpg');
-}
-
-.product-img{
-
-  }
 
   .column-half{
     display: flex;
@@ -438,10 +428,21 @@ code {
     flex: 1;
   }
 
-  .equalHW p{
+  .image-holder-div {
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+}
+
+  .equalHW h3{
     padding-left: 3rem;
     padding-top: 3rem;
+  }
+
+  .equalHW p{
+    padding-left: 3rem;
     padding-bottom: 3rem;
+    position: relative;
   }
 
   .equalHW img{
