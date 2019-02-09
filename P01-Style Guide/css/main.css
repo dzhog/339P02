@@ -59,12 +59,13 @@ header{
   margin-top: 5rem;
 }
 
-.right{
+.center-content{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 20rem;
+  justify-content: center;
+  margin-top: 8rem;
 }
 
 .checkright{
@@ -99,11 +100,16 @@ header{
   flex:1;
   max-width: 25rem;
   min-width: 25rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+
 }
 
 .grid2{
   flex:2;
   min-width: 40rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .grid3{
