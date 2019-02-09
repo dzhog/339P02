@@ -265,7 +265,6 @@ h2 {
 }
 
 h3 {
-  margin-top: 1rem;
 }
 
 h4 {
@@ -429,14 +428,21 @@ code {
   .equalHW img{
     max-height: 50vh;
   }
+
+  .equalHW p{
+    line-height: 1.7rem;
+  }
 } 
 
+/*making the text centered in the div*/
 .equalHW {
     flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   .equalHW h3{
-    padding-top: 3rem;
+    margin-top: 0;
   }
 
   .equalHW p{
