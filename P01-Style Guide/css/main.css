@@ -395,8 +395,6 @@ code {
     transform: translateX(-50%) translateY(-50%);
 }
 
-
-
 .container{
    display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -420,10 +418,18 @@ code {
   padding: 15px;
 }
 
-.column-half>.equalHW{
-display: flex;
-flex-wrap: wrap;
-}
+/*added responsivness to main page image placement*/
+
+@media only screen and (max-width: 1000px) {
+  .column-half{
+    display: block;
+    justify-content: space-between;
+  }
+
+  .equalHW img{
+    max-height: 50vh;
+  }
+} 
 
 .equalHW {
     flex: 1;
@@ -434,9 +440,7 @@ flex-wrap: wrap;
   }
 
   .equalHW p{
-   
     line-height: 1.7rem;
-    
   }
 
   .equalHW img{
