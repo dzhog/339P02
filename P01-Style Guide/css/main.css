@@ -267,7 +267,8 @@ h4 {
 }
 
 .bodyp {
-  max-width: 75%;
+  padding-right: 2rem;
+  padding-left: 2rem;
   line-height: 1.7rem;
   margin-top: 0;
 }
@@ -407,27 +408,29 @@ code {
     justify-content: space-between;
   }
 
-  .equalHW {
-    flex: 1;
-  }
-
   .image-holder-div {
   position: absolute;
   background-color: white;
   padding: 15px;
 }
 
+.column-half>.equalHW{
+display: flex;
+flex-wrap: wrap;
+}
+
+.equalHW {
+    flex: 1;
+  }
+
   .equalHW h3{
-    padding-left: 3rem;
     padding-top: 3rem;
   }
 
   .equalHW p{
-    padding-left: 10%;
-    padding-right: 10%;
+   
     line-height: 1.7rem;
-    vertical-align: center;
-    position: relative;
+    
   }
 
   .equalHW img{
@@ -439,6 +442,12 @@ code {
   .texta{
     width:49%;
     box-sizing: border-box;
+  }
+
+  .centered-text{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .text-overlay{
