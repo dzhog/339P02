@@ -1,4 +1,4 @@
-/*
+
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
@@ -98,11 +98,11 @@ header{
 .grid{
   flex:1;
   max-width: 25rem;
+  min-width: 25rem;
 }
 
 .grid2{
   flex:2;
- 
   min-width: 40rem;
 }
 
@@ -309,7 +309,7 @@ p{
 }
 
 img{
-  width:20rem;
+  width:100%;
 }
 
 img:hover{
@@ -466,6 +466,20 @@ flex-wrap: wrap;
     text-align:center;
   }
 
+  /*clickable images css*/
+.linkimage{
+  transition: 0.5s ease;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.linkimage:hover, .linkimage:active{
+  opacity: 0.5;
+}
+
+.linkimage:focus{
+  opacity:0.75;
+}
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -480,4 +494,3 @@ flex-wrap: wrap;
 
 /* 
   COMBINED ELEMENTS -------------------
-*/
