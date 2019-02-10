@@ -429,8 +429,16 @@ code {
     max-height: 50vh;
   }
 
-  .equalHW p{
+/*apply class twice in order to override settings applied for more than 1000px*/
+  .equalHW.equalHW p{
     line-height: 1.7rem;
+    max-width: 85%;
+    margin-bottom: 1.5rem;
+  }
+  
+ /*apply class twice in order to override settings applied for more than 1000px*/
+   .equalHW.equalHW h3{
+    margin-top: 1.5rem;
   }
 } 
 
@@ -447,6 +455,8 @@ code {
 
   .equalHW p{
     line-height: 1.7rem;
+    max-width: 85%;
+    margin-bottom: 0;
   }
 
   .equalHW img{
