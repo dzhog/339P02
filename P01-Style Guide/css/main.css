@@ -9,13 +9,15 @@
     box-sizing:border-box;
 }
 
+/*added padding to body content for space between the bottom of nav bar and top of content*/
 body {
   font-family: "Lato", sans-serif;
   background-color: rgb(255,244,230);
   font-color: rgb(60,47,47);
-    width: 100%;  
-    height: 100%; 
-    margin: 0;
+  width: 100%;  
+  height: 100%; 
+  margin: 0;
+  padding-top: 4rem;
 }
 
 html {
@@ -26,6 +28,36 @@ html {
 
 div{
 
+}
+
+footer {
+    background-color: rgb(33, 28, 28);
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 12rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer p{
+  color: rgb(255,244,230);
+}
+
+.footer-content{
+  padding-top: 3rem;
+}
+
+i{
+  color: rgb(255,244,230);
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+i:hover{
+color: rgb(170,130,110);
 }
 
 .totals{
@@ -435,7 +467,7 @@ code {
     max-width: 85%;
     margin-bottom: 1.5rem;
   }
-  
+
  /*apply class twice in order to override settings applied for more than 1000px*/
    .equalHW.equalHW h3{
     margin-top: 1.5rem;
@@ -463,6 +495,16 @@ code {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .equalHW-footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .equalHW-footer p{
+    padding-top: 0;
   }
 
   .texta{
