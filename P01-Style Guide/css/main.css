@@ -477,7 +477,8 @@ code {
 
 @media only screen and (max-width: 1000px) {
   .column-half{
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 
@@ -497,20 +498,30 @@ code {
     margin-top: 1.5rem;
   }
 
- #block1 .flex-item:nth-of-type(odd){
+/*ordeing the events and text so that text displays first when on a smaller screen*/
+ #block1{
+  order: 0;
+}
+ #block2{
   order: 1;
 }
-
- #block1 .flex-item:nth-of-type(even){
+#block3{
+  order: 3;
+}
+ #block4{
   order: 2;
 }
-
-#block2 .flex-item:nth-of-type(odd){
-  order: 2;
+ #block5{
+  order: 4;
 }
-
- #block2 .flex-item:nth-of-type(even){
-  order: 1;
+ #block6{
+  order: 5;
+}
+ #block7{
+  order: 7;
+}
+ #block8{
+  order: 6;
 }
 } 
 
