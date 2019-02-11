@@ -40,6 +40,10 @@ footer {
     overflow: hidden;
 }
 
+.contact-footer.contact-footer{
+ margin-top: 2rem;
+}
+
 footer p{
   color: rgb(255,244,230);
 }
@@ -58,6 +62,18 @@ i{
 
 i:hover{
 color: rgb(170,130,110);
+}
+
+nav i{
+  transition: 0.5s ease;
+  cursor: pointer;
+  color: rgb(170,130,110);
+  margin-right: 1.5rem;
+  float: right;
+}
+
+nav i:hover{
+  color: rgb(66,50,50);
 }
 
 .totals{
@@ -102,7 +118,6 @@ header{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 8rem;
 }
 
 .checkright{
@@ -297,6 +312,10 @@ input[name=ccn]{
   box-sizing:border-box;
 }
 
+h1, h2, h3, h4, h5{
+  color: rgb(66,50,50);
+}
+
 h2 {
   margin-top: 1rem;
 }
@@ -376,7 +395,6 @@ nav{
 }
 
 nav a{
-  text-align: center;
   padding: 1.5rem;
   letter-spacing: 1px;
   font-size: 0.8rem;
@@ -477,6 +495,22 @@ code {
    .equalHW.equalHW h3{
     margin-top: 1.5rem;
   }
+
+ #block1 .flex-item:nth-of-type(odd){
+  order: 1;
+}
+
+ #block1 .flex-item:nth-of-type(even){
+  order: 2;
+}
+
+#block2 .flex-item:nth-of-type(odd){
+  order: 2;
+}
+
+ #block2 .flex-item:nth-of-type(even){
+  order: 1;
+}
 } 
 
 /*making the text centered in the div*/
@@ -518,7 +552,6 @@ code {
   }
 
   .centered-text{
-    text-align: center;
     justify-content: center;
     align-items: center;
   }
