@@ -332,13 +332,13 @@ button:hover, button:focus{
   position:absolute;
   margin-top: 3rem;
   padding:2rem;
-  left:0;
+  right:0;
   top:0;
   background: rgb(255,244,230); 
   min-height: 80%;
   width:30rem;
   z-index: 1;
-  transform: translate(-40rem);
+  transform: translate(40rem);
   transition: 0.5s;
 }
 
