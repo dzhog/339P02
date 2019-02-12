@@ -15,82 +15,113 @@
 <body> 
 		<nav>
 			<a href="main.html" class="nav">HOME</a>
-    <a href="events.html" class="nav">EVENTS</a>
-    <a href="products.html" class="nav">MENU</a>
-    <a href="contact.html" class="nav">CONTACT</a>
-    <i class="fas fa-shopping-cart nav-icon" onclick="location.href='checkout.html';" value="Go to Checkout"></i>
+		    <a href="events.html" class="nav">EVENTS</a>
+		    <a href="products.html" class="nav">MENU</a>
+		    <a href="contact.html" class="nav">CONTACT</a>
+		    <i class="fas fa-shopping-cart nav-icon" onclick="location.href='checkout.html';" value="Go to Checkout"></i>
 		</nav>
-	
-		<div class="grid2">
-	        <h2>Items</h2>
-	        <p class="item">Iced Coffee &nbsp;&nbsp; Size: sml<br><p class="rightalign">Price: $2.50</p><button class="edit">edit</button>&nbsp;<button class="remove">remove</button></p><br>
 
-	        <p class="item">Classic Americano &nbsp;&nbsp; Size: med<br><p class="rightalign">Price: $4.50</p><button class="edit">edit</button>&nbsp;<button class="remove">remove</button></p><br>
+		<div id="sidebill" class = billing>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<script>
+			function closeNav() {
+			  document.getElementById("sidebill").style.transform = "translate(-40rem)";
+			  document.getElementById("main").style.marginLeft = "0rem";
+			  document.body.style.backgroundColor = "rgb(255,244,230)";
+			}
+		</script>
+		
+          <h2>Payment Method</h2>
+          <input type = "radio" name = "pmethod" value = "VISA">VISA
+          <input type = "radio" name = "pmethod" value = "Mastercard">Mastercard
+          <input type = "radio" name = "pmethod" value = "Paypal">Paypal
+          <input type = "radio" name = "pmethod" value = "Other">Other
+          <h2>Billing Information</h2>
+          <input type = "text" name="fn" placeholder="First Name">
+          <input type = "text" name="ln" placeholder="Last Name"><br>
+          <input type="text" name="email" placeholder="Email"><br>
+          <input type="text" name="cc" placeholder="Credit Card Number"> <input type="text" name="ccv" placeholder="CCV"><br>
+          
+          <input type = "text" name="ccn" placeholder="Name on Card"><br>
+
+          <label>Expiration Date</label><br>
+
+          <select class="months">
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="Jul">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+          </select>
+
+          <select class="year">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+          </select><br><br>
+       
+        	<button class="rightalignbutt">Pay</button>
+        </div>
+        <div class="opac" id="opac">
+        </div>
+		<div class="grid2" id="main">
+
+	        <h2>Items</h2>
+	        <div class="item itemtop">
+	        	<img src="iced coffee.jpg"> 
+	        	<h3> Iced Coffee &nbsp;&nbsp; Size: sml <br><br>
+	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h4>	    
+	        	<p class="rightalign">Price: $2.50</p>
+	        	
+	        </div><br>
+
+	        <div class="item">
+	        	<img src="americano.jpg"> 
+	        	<h3> Classic Americano &nbsp;&nbsp; Size: med <br><br>
+	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h4>	    
+	        	<p class="rightalign">Price: $4.50</p>
+	        	
+	        </div><br>
 
 	        <div class="totals">
     			<h4 class="rightalign"> Subtotal: $7.00<br>GST: $0.35</h4>
 	        	<h3 class="rightalign"> Total: $7.35</h3>
+	        	<button onclick="openNav()" class="rightalignbutt">Checkout</button>
+	        	<script>
+					function openNav() {
+					  document.getElementById("sidebill").style.transform = "translate(0rem)"
+					  document.getElementById("main").style.marginLeft = "40rem";
+					}
+				</script>
 	    	</div>
 
     	</div>
+	        
+    	
+	</body>
 
-    	<div class="grid3">
-    		
-	        <div class = billing>
-	          <h2>Payment Method</h2>
-	          <input type = "radio" name = "pmethod" value = "VISA">VISA
-	          <input type = "radio" name = "pmethod" value = "Mastercard">Mastercard
-	          <input type = "radio" name = "pmethod" value = "Paypal">Paypal
-	          <input type = "radio" name = "pmethod" value = "Other">Other
-	          <h2>Billing Information</h2>
-	          <input type = "text" name="fn" placeholder="First Name">
-	          <input type = "text" name="ln" placeholder="Last Name"><br>
-	          <input type="text" name="email" placeholder="Email"><br>
-	          <input type="text" name="cc" placeholder="Credit Card Number"> <input type="text" name="ccv" placeholder="CCV"><br>
-	          
-	          <input type = "text" name="ccn" placeholder="Name on Card"><br>
 
-	          <label>Expiration Date</label><br>
 
-	          <select class="months">
-	            <option value="Jan">Jan</option>
-	            <option value="Feb">Feb</option>
-	            <option value="Mar">Mar</option>
-	            <option value="Apr">Apr</option>
-	            <option value="May">May</option>
-	            <option value="Jun">Jun</option>
-	            <option value="Jul">Jul</option>
-	            <option value="Aug">Aug</option>
-	            <option value="Sep">Sep</option>
-	            <option value="Oct">Oct</option>
-	            <option value="Nov">Nov</option>
-	            <option value="Dec">Dec</option>
-	          </select>
-
-	          <select class="year">
-	            <option value="2019">2019</option>
-	            <option value="2020">2020</option>
-	            <option value="2021">2021</option>
-	            <option value="2022">2022</option>
-	            <option value="2023">2023</option>
-	            <option value="2024">2024</option>
-	            <option value="2025">2025</option>
-	            <option value="2026">2026</option>
-	            <option value="2027">2027</option>
-	            <option value="2028">2028</option>
-	          </select><br><br>
-	       
-	        	<button class="rightalignbutt">Checkout</button>
-	        </div>
-
-    	</div>
-
-    	<footer class="centered-text equalHW-footer">
-  <p>Follow us on social media!</p>
-  <div>
-  <i class="fab fa-facebook fa-2x"></i>
-  <i class="fab fa-instagram fa-2x"></i>
-  <i class="fab fa-twitter-square fa-2x"></i></div>
+<footer class="centered-text equalHW-footer">
+	<p>Follow us on social media!</p>
+	<div>
+	  <i class="fab fa-facebook fa-2x"></i>
+	  <i class="fab fa-instagram fa-2x"></i>
+	  <i class="fab fa-twitter-square fa-2x"></i>
+	</div>
 </footer>
 
-	</body>

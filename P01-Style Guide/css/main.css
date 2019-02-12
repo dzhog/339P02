@@ -31,17 +31,46 @@ div{
 }
 
 footer {
+  margin-top:auto;
+  
     background-color: rgb(66,50,50);
     position: relative;
+
     left: 0;
     bottom: 0;
-    height: 12rem;
+    height: 25vh;
     width: 100%;
+    z-index: 2;
     overflow: hidden;
+    
 }
 
-.contact-footer.contact-footer{
- margin-top: 2rem;
+.itemtop{
+  border-top-style: solid;
+}
+
+.item img{
+  flex:1;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+.item h3{
+  flex:12;
+  padding-left: 3rem;
+  padding-top:2rem;
+}
+
+.item p{
+  flex:3;
+  padding-top:6rem;
+  bottom:0;
+}
+
+.contactbody{
+  min-height: 72vh;
 }
 
 footer p{
@@ -178,7 +207,6 @@ margin-bottom: 2rem;
 }
 
 .crop-image{
- 
 }
 
 .crop-image img{
@@ -190,10 +218,15 @@ margin-bottom: 2rem;
   min-width: 40rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  height:72vh;
+}
+
+#main{
+  padding:1rem;
+  transition-duration: .5s;
 }
 
 .grid3{
-  transform: translate(0,-6rem);
   flex:1;
   font-size: 1.5rem;
   min-width: 25rem;
@@ -268,15 +301,32 @@ button:hover, button:focus{
 }
 
 .billing{
-  align-content: center;
+  position:absolute;
+  margin-top: 3rem;
   padding:2rem;
+  left:0;
+  top:0;
+  background: rgb(255,244,230); 
+  min-height: 80%;
+  width:30rem;
+  z-index: 1;
+  transform: translate(-40rem);
+  transition: 0.5s;
+}
 
-  max-width: 30rem;
-  min-width: 30rem;
-  margin-right: 5rem;
-  box-sizing:border-box;
-  border-color: rgb(100,45,45);
-  
+.billing .closebtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  margin-left: 20rem;
+}
+
+.opac{
+  z-index: 500;
+  position:absolute;
+  height: 100vh;
+  background-color: black;
 }
 
 .months{
@@ -380,8 +430,8 @@ h4 {
 }
 
 .item{
-  border-top-style: solid;
-
+  border-bottom-style: solid;
+  display: flex;
   border-color: rgb(100,45,45);
 }
 
