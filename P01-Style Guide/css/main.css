@@ -32,17 +32,45 @@ div{
 
 footer {
   margin-top:auto;
-  
-    background-color: rgb(66,50,50);
-    position: relative;
+  background-color: rgb(66,50,50);
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 25vh;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
 
-    left: 0;
-    bottom: 0;
-    height: 25vh;
-    width: 100%;
-    z-index: 2;
-    overflow: hidden;
-    
+.homesplash{
+  position:relative;
+}
+
+.homesplash p{
+  position:absolute;
+  color:white;
+  top: 20vh;
+  left: 60vw;
+  right: 10vw;
+}
+
+.homebotbanner{
+  position:relative;
+}
+
+.homebotbanner button{
+  position:absolute;
+  background-color: rgba(0,0,0,0);
+  font-size: 12rem;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+}
+
+.homebotbanner button:hover{
+  background-color: rgba(66,50,50,0.5);
 }
 
 .itemtop{
