@@ -157,10 +157,11 @@ header{
 .select-display{
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .select-display button{
-margin-top: 1rem;
+
 }
 
 .grid{
@@ -181,7 +182,7 @@ margin-bottom: 2rem;
 }
 
 .crop-image img{
-  
+
 }
 
 .grid2{
@@ -670,6 +671,8 @@ code {
 /*css for select menus found at:https://www.w3schools.com/howto/howto_custom_select.asp*/
 .custom-select {
   position: relative;
+  width: 12rem;
+  margin:0.5rem;
 }
 
 .custom-select select {
