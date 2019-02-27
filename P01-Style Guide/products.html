@@ -27,8 +27,9 @@
         	<img src="americano.jpg" class="linkimage" onclick="location.href='product-view1.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
   
         <div class="select-display">
-        	<button class="add"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
+        <div id="snackbar">Item successfully added to cart!</div>
 
         <div class="grid">
         	<h2>Latte</h2>
@@ -36,7 +37,7 @@
         	<img src="latte.jpg" class="linkimage" onclick="location.href='product-view2.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
 
              <div class="select-display">
-        	<button class="add"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction()"><i class="fas fa-plus" ></i>add to order</button></div>
         </div>
 
         <div class="grid">
@@ -45,7 +46,7 @@
         	<img src="coffee.jpg" class="linkimage" onclick="location.href='product-view1.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
 
         	 <div class="select-display">
-        	<button class="add"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
 
         <div class="grid">
@@ -55,7 +56,7 @@
         	<img src="mocha.jpg" class="linkimage" onclick="location.href='product-view2.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
 
             <div class="select-display">
-        	<button class="add"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
 
         <div class="grid">
@@ -65,7 +66,7 @@
         	<img src="iced coffee.jpg" class="linkimage" onclick="location.href='product-view1.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
 
             <div class="select-display">
-        	<button class="add"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
 
         <div class="grid">
@@ -75,7 +76,7 @@
         	<img src="black.jpg" class="linkimage" onclick="location.href='product-view2.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
 
             <div class="select-display">
-        	<button class="add"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
 
 	</div>
@@ -83,9 +84,17 @@
     <footer class="centered-text equalHW-footer">
   <p>Follow us on social media!</p>
   <div>
-  <i class="fab fa-facebook fa-2x"></i>
-  <i class="fab fa-instagram fa-2x"></i>
-  <i class="fab fa-twitter-square fa-2x"></i></div>
+  <i class="fab fa-facebook fa-2x" onclick="location.href='styleguide.html';" value="Go to Styleguide"></i>
+  <i class="fab fa-instagram fa-2x" onclick="location.href='citations.html';" value="Go to Citations page"></i>
+  <i class="fab fa-twitter-square fa-2x" onclick="location.href='https://github.com/dzhog/339P02';" value="Go to Github Repository"></i></div>
 </footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
 
 </body>

@@ -53,8 +53,9 @@
   </div>
 </div>
 <div class="select-display">
-          <button class="add"><i class="fas fa-plus"></i>add to order</button></div>
+          <button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
+        <div id="snackbar">Item successfully added to cart!</div>
 </div>
 </div>
   
@@ -62,10 +63,10 @@
 
 <footer class="centered-text equalHW-footer">
   <p>Follow us on social media!</p>
-  <div>
-  <i class="fab fa-facebook fa-2x"></i>
-  <i class="fab fa-instagram fa-2x"></i>
-  <i class="fab fa-twitter-square fa-2x"></i></div>
+ <div>
+  <i class="fab fa-facebook fa-2x" onclick="location.href='styleguide.html';" value="Go to Styleguide"></i>
+  <i class="fab fa-instagram fa-2x" onclick="location.href='citations.html';" value="Go to Citations page"></i>
+  <i class="fab fa-twitter-square fa-2x" onclick="location.href='https://github.com/dzhog/339P02';" value="Go to Github Repository"></i></div>
 </footer>
 
 
@@ -143,6 +144,14 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
 </script>
 </body>
 </html>
