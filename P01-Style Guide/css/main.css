@@ -183,6 +183,7 @@ header{
   margin-bottom: 0;
 }
 
+
 .checkright{
   display: -webkit-flex;
   display: -ms-flex;
@@ -374,14 +375,14 @@ button:hover, button:focus{
 
 
 input[name=fn]{
-  width:49%;
+  width:100%;
   padding:10px 10px;
   margin:15px 0;
   box-sizing:border-box;
 }
 
 input[name=ln]{
-  width:49%;
+  width:100%;
   padding:10px 10px;
   margin:15px 0;
   box-sizing:border-box;
@@ -438,9 +439,9 @@ h4 {
   margin-bottom: 0.25rem;
 }
 
+
 .bodyp {
   padding-right: 2rem;
-  padding-left: 2rem;
   line-height: 1.7rem;
   margin-top: 0;
 }
@@ -621,18 +622,22 @@ code {
     justify-content: center;
 }
 
-  .column-half{
+.marginleft{
+  padding: 4rem;
+
+}
+
+.column-half{
     display: flex;
-   
     min-height: 92vh;
   }
 
-  .equalHW {
+.equalHW {
     flex: 1;
     flex-wrap: wrap;
   }
 
-  .image-holder-div {
+.image-holder-div {
   position: absolute;
   background-color: white;
   padding: 15px;
@@ -729,7 +734,7 @@ code {
 
 
   .texta{
-    width:49%;
+    width:100%;
     box-sizing: border-box;
   }
 
