@@ -596,6 +596,10 @@ code {
   min-width: 30%;
 }
 
+.leftind{
+  margin-left: 2rem;
+}
+
 .middletitle{
     position: absolute;
     top: 30%;
