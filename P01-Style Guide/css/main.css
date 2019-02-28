@@ -191,6 +191,10 @@ header{
   padding-top: 2rem;
 }
 
+.no-margin h3{
+  margin-bottom: 0;
+}
+
 .checkright{
   display: -webkit-flex;
   display: -ms-flex;
@@ -575,7 +579,7 @@ code {
 
   .column-half{
     display: flex;
-    justify-content: space-between;
+   
     min-height: 92vh;
   }
 
