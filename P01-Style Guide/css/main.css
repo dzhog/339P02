@@ -921,6 +921,11 @@ code {
   to {bottom: 0; opacity: 0;}
 }
 
+.citations-div{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 /*------------------------------------DIFFERENT PHONE SIZE LAYOUTS--------------------------------------*/
 
 /* #### Mobile Phones Portrait #### */
