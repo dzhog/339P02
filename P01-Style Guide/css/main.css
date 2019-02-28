@@ -545,7 +545,9 @@ nav img:hover{
    display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/*code for hamburger responsive nav bar found at: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
+
+/* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a{display: none;}
   .topnav a.icon {
