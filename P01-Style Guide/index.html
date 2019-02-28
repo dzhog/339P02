@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <script> window.location.replace('main.html'); </script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P01 - Style Guide</h1>
+<!--
+      <h5>A template you can use to start building out your own style guides with.</h5><br>
+
+
+      <nav>        
+        <a href="#interactive_elements">Interactive Elements</a><br>
+        <a href="#text_elements">Text Elements</a><br>
+        <a href="#combined_elements">Combined Elements</a><br>
+        <a href="product_listing.html">Product Listing Template</a><br>
+        <a href="checkout.html">Checkout Template</a><br>
+        <a href="#citations">Citations</a><br><br><br>
+      </nav>
+
+-->
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section class="element">
+        <h2>Navigation</h2>
+
+          <nav>
+            <a href="#" class="nav">HOME</a>
+            <a href="products.html" class="nav">MENU</a>
+            <a href="checkout.html" class="nav">CART</a>
+            <a href="#" class="nav">CONTACT</a>
+          </nav>
+
+        <code>"&lt;a href="" class="button"&gt;Style Guide&lt;/a&gt;"</code>
+
+      </section>
+
+    <section id="interactive_elements">
+      <section class="element">
+        <h2>In-text link</h2>
+        <a class="textlink" href="#combined_elements">In-text link</a>
+        <code>&lt;a href="#citations"&gt;In-text link&lt;/a&gt;</code>
+      </section>
+
+
+      <section class="element">
+        <h2>Submit/Reset Buttons</h2>
+        <button class = "butt">Submit</button>
+        <button class = "butt">Reset</button>
+        <code>&lt;button&gt;Submit&lt;/button&gt;</code>
+      </section>  
+
+
+      <section class="element">
+        <h2>Text Input Field with Label</h2>
+        <label>Username</label><br>
+        <input type="text">
+        <br><br>
+        <label>Password</label><br>
+        <input type="text">
+        <code>&lt;label&gt;Username&lt;/label&gt;</code>
+        <code>&lt;input type= &quot;text&quot;&gt;</code>
+      </section>
+
+
+      <section class="element">
+        <h2>Radio Button with Label</h2>
+        <input type="radio" name = "size" value = "small"><label>Small</label>
+        <br>
+        <input type="radio" name = "size" value = "medium"><label>Medium</label>
+        <br>
+        <input type="radio" name = "size" value = "large"><label>Large</label>
+        <code>
+        &lt;input type = &quot;radio&quot; name= &quot;color&quot; value = &quot;small&quot;&gt;&lt;label&gt;Small&lt;/label&gt;
+        </code>
+      </section>
+
+
+      <section class="element">
+        <h2>Image as a Link</h2>
+        <!-- image from: http://www.parkinsonalabama.com/4-health-benefits-of-coffee/-->
+        <a class="imagelink" href="https://www.coffeebeandirect.com/" target="_blank"><img src="coffee.jpg"></a>
+
+        <code>&lt;a href=&quot;https://www.coffeebeandirect.com/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;coffee.jpg&quot;&gt;&lt;/a&gt;</code>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h2>Headings</h2>
+        <h2>Heading 1</h2>
+        <h3>Heading 2</h3>
+        <h4>Heading 3</h4>
+        <h5>Heading 4</h5>
+
+        <code>
+        &lt;h2&gt;Heading 1&lt;/h2&gt;<br>
+        &lt;h3&gt;Heading 2&lt;/h3&gt;<br>
+        &lt;h4&gt;Heading 3&lt;/h4&gt;<br>
+        &lt;h5&gt;Heading 4&lt;/h5&gt;
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h2>Paragraphs</h2>
+        <p class ="bodyp">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin erat at nibh posuere, a pretium ligula facilisis. Cras vulputate, enim non dapibus consectetur, massa ligula tristique massa, at elementum nisi magna a lectus. Proin eu nunc tempus quam mollis commodo. Vivamus maximus congue est, vitae feugiat nisi luctus quis. Nullam mollis, nisi nec fermentum scelerisque, ligula risus dictum ipsum, laoreet vestibulum neque dolor sed erat. Duis pulvinar, velit posuere egestas sagittis, magna lorem ultrices nulla, nec egestas elit felis et tellus. Nullam blandit, lacus ut scelerisque rutrum, lorem lectus placerat sapien, in sodales dui velit at metus. Donec semper ante quis cursus malesuada. Mauris mattis varius diam vitae commodo. Aenean id malesuada augue, vel placerat est. Vivamus eget elit suscipit, pulvinar augue sit amet, elementum neque. Donec porttitor dui et nibh interdum, auctor mattis felis molestie. Morbi eu fermentum tellus.
+        </p>
+       
+      </section>
+
+      <section class="element">
+        <h2>Numbered Lists</h2>
+        <ol>
+          <li>Americano</li>
+          <li>Latte</li>
+          <li>Cappuccino</li>
+        </ol>
+
+        <code>
+          &lt;ol&gt;<br>
+            &lt;li&gt;Americano&lt;/li&gt;<br>
+            &lt;li&gt;Latte&lt;/li&gt;<br>
+            &lt;li&gt;Cappuccino&lt;/li&gt;<br>
+          &lt;/ol&gt;
+        </code>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <!--<h2>Combined Elements</h2>-->
+
+<!--
+      <section class="element">
+        <h2>Main Navigation</h2>
+        <nav>
+          <a class="button-navi" href="#">Home</a><br>
+          <a class="button-navi" href="#">Menu</a><br>
+          <a class="button-navi" href="#">About Us</a>
+        </nav><br>
+
+        <code>
+        &lt;nav&gt;<br>
+          &lt;a class="button-nav" href="#"&gt;Home&lt;/a&gt;<br>
+          &lt;a class="button-nav" href="#"&gt;Menu&lt;/a&gt;<br>
+          &lt;a class="button-nav" href="#"&gt;About Us&lt;/a&gt;<br>
+        &lt;/nav>
+        </code>
+      </section>
+
+      -->
+
+      <section class="element">
+
+        <h3>Product/Service Listing</h3>
+        <h2>Classic Americano</h2>
+
+        <img src="americano.jpg"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html-->
+
+        <p>Our americano uses espresso made with the the most premium coffee beans, ground as fine as possible for maximum flavour. Espresso shots are topped with hot water to produce a light layer of crema. The result is this wonderfully rich cup with depth and nuance. Pro tip: for additional caffeine, ask your barista to try this with an extra shot (75 mg caffeine per shot).</p>
+
+        <h3 class = "prices">Small: $3.50<br>Medium: $4:50<br>Large: $5.50<br></h3>
+
+        <br><br><br>
+
+        <code>
+        &lt;h2&gt;Classic Americano&lt;/h2&gt;<br>
+        &lt;img src="americano.jpg"&gt;<br>
+        &lt;p&gt;Our americano uses the most premium coffee beans, ground as fine as possible for maximum flavour.&lt;/p&gt;<br>
+        &lt;h3><br>
+        Small: $3.50&lt;br&gt;<br>
+        Medium: $4:50&lt;br&gt;<br>
+        Large: $5.50&lt;br&gt;<br>
+        &lt;/h3&gt;
+
+        </code>
+
+      </section> 
+
+      <section class="element">
+
+        <h3>Payment Form</h3>
+        <div class = billing>
+          <h2>Payment Method</h2>
+          <input type = "radio" name = "pmethod" value = "VISA">VISA<br><br>
+          <input type = "radio" name = "pmethod" value = "Mastercard">Mastercard<br><br>
+          <input type = "radio" name = "pmethod" value = "Paypal">Paypal<br><br>
+          <input type = "radio" name = "pmethod" value = "Other">Other<br><br>
+
+          <h2>Billing Information</h2><br>
+          <input type = "text" name="fn" placeholder="First Name">
+          <input type = "text" name="ln" placeholder="Last Name"><br><br>
+          <input type="text" name="email" placeholder="Email"><br><br>
+          <input type="text" name="cc" placeholder="Credit Card Number"> <input type="text" name="ccv" placeholder="CCV"><br><br>
+          
+          <input type = "text" name="ccn" placeholder="Name on Card"><br><br>
+
+          <label>Expiration Date</label><br>
+
+
+          <select class="months">
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="Jul">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+          </select>
+
+          <select class="year">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+          </select><br><br>
+          <button class = "billbutt">Submit</button>
+        </div>
+
+
+
+
+
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        <h2>Items</h2>
+        <p class="item">Iced Coffee &nbsp;&nbsp; Size: sml<br><p class="itemprice">Price: $2.50</p><button class="edit">edit</button><button class="remove">remove</button></p><br>
+
+        <p class="item">Classic Americano &nbsp;&nbsp; Size: med<br><p class="itemprice">Price: $4.50</p><button class="edit">edit</button><button class="remove">remove</button></p><br>
+        <h4 class="rightalign"> Subtotal: $7.00<br>GST: $0.35</h4>
+        <h3 class="rightalign"> Total: $7.35</h3>
+        <br>
+        <button class="rightalignbutt">Checkout</button>
+
+
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+    
+<!--
+    <h2>Brand Definition</h2>
+    <p>
+    This is a website for a cafe which offers different types of coffee and espresso as its main product. Anybody can be a potential customer, but their target demographic is young adults that have more disposable income and more time so they can sit in at the cafe to create a certain atmosphere in the establishment. The company might entice someone to purchase a product by providing a certain image for the customer by association with a the image of the cafe's brand.
+
+    <br><br>
+
+    <strong>Persona</strong><br>
+    <img src ="persona.jpg"><br>
+    Jane Meyers, Age 23<br><br>
+     Jane is a new college grad that has recently started her new job as a UX designer. On the weekends, she starts her day off at a local cafe and works on her latest passion project while enjoying a cup of coffee to wake her up. She is active on social media, and is a frequent poster to her food centered Instagram account. Her pain points for cafes that she has visited before was the loud and busy atmosphere, and presentation of the food which would not belong on her Instagram.
+
+    </p>
+
+    <h2>Brand Components</h2>
+    <p>
+    <strong>Fonts</strong><br>
+    Headers will be a light cursive font, while body text will use an elegant light sans serif, Maybe Poppins.<br><br>
+
+    <strong>Colour Palettes</strong><br>
+    The site will use more muted pastel colors as highlights, as to maintain lots of white space.
+    <img src ="palette1.png"><img src ="palette2.png">
+    <br><br>
+
+    <strong>Imagery</strong><br>
+    <img src = "1.png"> <img src = "2.jpg"> <img src = "3.jpg">
+    </p>
+
+  -->
+
+  </body>
+</html>
