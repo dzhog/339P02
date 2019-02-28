@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <head>
 	<meta charset="utf-8">
 	<title>P01 - Style Guide Template</title>
@@ -22,16 +22,73 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
   </nav>
 
-		<div id="sidebill" class = billing>
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<script>
-			function closeNav() {
-			  document.getElementById("sidebill").style.transform = "translate(40rem)";
-			  document.getElementById("main").style.marginRight = "0rem";
-			  document.body.style.backgroundColor = "rgb(255,244,230)";
-			}
-		</script>
-		
+
+
+		<div class="grid2" id="main">
+
+	        <h2>Your Order</h2>
+	        <div class="item">
+	        	<img src="iced coffee.jpg"> 
+	        	<h3> Iced Coffee &nbsp;&nbsp; Size: sml <br><br>
+	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h4>	    
+	        	<p class="rightalign prices">Price: $2.50</p>
+	        	
+	        </div>
+
+	        <div class="item">
+	        	<img src="americano.jpg"> 
+	        	<h3> Classic Americano &nbsp;&nbsp; Size: med <br><br>
+	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h4>	    
+	        	<p class="rightalign prices">Price: $4.50</p>
+	        	
+	        </div><br>
+
+	        <div class="totals">
+    			<h4 class="rightalign"> Subtotal: $7.00<br>GST: $0.35</h4>
+	        	<h3 class="rightalign"> Total: $7.35</h3>
+	        	<button onclick="openNav()" class="rightalignbutt">Checkout</button>
+	        	<script>
+					function openNav() {
+
+            document.getElementById("sidebill").style.visibility = "visible";
+					  
+            if($(window).width()<720){
+              document.getElementById("sidebill").style.transform = "translate(0rem, 5rem)"
+              document.getElementById("foot").style.height = "0vh";
+            }
+            else{
+              document.getElementById("sidebill").style.transform = "translate(0rem)"
+              document.getElementById("main").style.marginRight = "40rem";
+              document.getElementById("sidebill").style.backgroundColor = "rgb(255,244,230)";
+          }
+
+					}
+				</script>
+
+				<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	    	</div>
+    <div id="sidebill" class = billing>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <script>
+      function closeNav() {
+        document.getElementById("sidebill").style.visibility = "hidden";
+        document.getElementById("foot").style.height = "24vh";
+        document.getElementById("sidebill").style.transform = "translate(40rem)";
+        document.getElementById("main").style.marginRight = "0rem";
+        document.body.style.backgroundColor = "rgb(255,244,230)";
+        document.getElementById("foot").style.backgroundColor = "rgb(66,50,50)";
+      }
+    </script>
+    
           <h2>Payment Method</h2>
           <input type = "radio" name = "pmethod" value = "VISA">VISA
           <input type = "radio" name = "pmethod" value = "Mastercard">Mastercard
@@ -75,51 +132,8 @@
             <option value="2028">2028</option>
           </select><br><br>
        
-        	<button class="rightalignbutt">Pay</button>
+          <button class="rightalignbutt">Pay</button>
         </div>
-
-		<div class="grid2" id="main">
-
-	        <h2>Your Order</h2>
-	        <div class="item">
-	        	<img src="iced coffee.jpg"> 
-	        	<h3> Iced Coffee &nbsp;&nbsp; Size: sml <br><br>
-	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h4>	    
-	        	<p class="rightalign">Price: $2.50</p>
-	        	
-	        </div>
-
-	        <div class="item">
-	        	<img src="americano.jpg"> 
-	        	<h3> Classic Americano &nbsp;&nbsp; Size: med <br><br>
-	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h4>	    
-	        	<p class="rightalign">Price: $4.50</p>
-	        	
-	        </div><br>
-
-	        <div class="totals">
-    			<h4 class="rightalign"> Subtotal: $7.00<br>GST: $0.35</h4>
-	        	<h3 class="rightalign"> Total: $7.35</h3>
-	        	<button onclick="openNav()" class="rightalignbutt">Checkout</button>
-	        	<script>
-					function openNav() {
-					  document.getElementById("sidebill").style.transform = "translate(0rem)"
-					  document.getElementById("main").style.marginRight = "40rem";
-					}
-				</script>
-
-				<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-	    	</div>
-
     	</div>
 	        
     	
@@ -127,7 +141,7 @@ function myFunction() {
 
 
 
-<footer class="centered-text equalHW-footer">
+<footer id="foot" class="centered-text equalHW-footer">
 	<p>Follow us on social media!</p>
 	<div>
   <i class="fab fa-facebook fa-2x" onclick="location.href='styleguide.html';" value="Go to Styleguide"></i>
