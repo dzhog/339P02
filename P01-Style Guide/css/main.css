@@ -27,8 +27,8 @@ html {
     margin: 0;
 }
 
-div{
-
+strong{
+  font-size: 1.5rem;
 }
 
 footer {
@@ -52,6 +52,8 @@ footer {
 .homesplash p{
   position:absolute;
   color:white;
+  font-size: 2vw;
+  line-height: 3vw;
   top: 20vh;
   left: 60vw;
   right: 10vw;
@@ -946,7 +948,15 @@ code {
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
-
+.homesplash p{
+  position:absolute;
+  color:white;
+  font-size: 4vw;
+  line-height: 5vw;
+  top: 20vh;
+  left: 40vw;
+  right: 10vw;
+}
 }
 
 /* #### Mobile Phones Landscape #### */
