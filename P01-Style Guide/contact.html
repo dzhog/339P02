@@ -11,13 +11,15 @@
 </head>
 
 <body> 
-	<nav>
-		<a href="main.html" class="nav">HOME</a>
-    	<a href="events.html" class="nav">EVENTS</a>
-    	<a href="products.html" class="nav">MENU</a>
-    	<a href="contact.html" class="nav">CONTACT</a>
-    	<i class="fas fa-shopping-cart nav-icon" onclick="location.href='checkout.html';" value="Go to Checkout"></i>
-	</nav>
+	<body>
+  <nav class="topnav" id="myTopnav">
+    <a href="main.html" class="nav">HOME</a>
+    <a href="events.html" class="nav">EVENTS</a>
+    <a href="products.html" class="nav">MENU</a>
+    <a href="contact.html" class="nav">CONTACT</a>
+    <i class="fas fa-shopping-cart nav-icon" onclick="location.href='checkout.html';" value="Go to Checkout"></i>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+  </nav>
 
 	<div class="column-half center-content">
 		<div class="equalhw">
@@ -59,4 +61,13 @@
   <i class="fab fa-twitter-square fa-2x" onclick="location.href='https://github.com/dzhog/339P02';" value="Go to Github Repository"></i></div>
 </footer>
 
-
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>

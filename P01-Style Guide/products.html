@@ -12,13 +12,14 @@
 
 
 <body> 
-		<nav>
-            <a href="main.html" class="nav">HOME</a>
+		 <nav class="topnav" id="myTopnav">
+    <a href="main.html" class="nav">HOME</a>
     <a href="events.html" class="nav">EVENTS</a>
     <a href="products.html" class="nav">MENU</a>
     <a href="contact.html" class="nav">CONTACT</a>
     <i class="fas fa-shopping-cart nav-icon" onclick="location.href='checkout.html';" value="Go to Checkout"></i>
-		</nav>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+  </nav>
 
 	<div class="center-content">
 		<div class="grid">
@@ -27,7 +28,7 @@
         	<img src="americano.jpg" class="linkimage" onclick="location.href='product-view1.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
   
         <div class="select-display">
-        	<button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction2()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
         <div id="snackbar">Item successfully added to cart!</div>
 
@@ -37,7 +38,7 @@
         	<img src="latte.jpg" class="linkimage" onclick="location.href='product-view2.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
 
              <div class="select-display">
-        	<button class="add" onclick="myFunction()"><i class="fas fa-plus" ></i>add to order</button></div>
+        	<button class="add" onclick="myFunction2()"><i class="fas fa-plus" ></i>add to order</button></div>
         </div>
 
         <div class="grid">
@@ -46,7 +47,7 @@
         	<img src="coffee.jpg" class="linkimage" onclick="location.href='product-view1.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
 
         	 <div class="select-display">
-        	<button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction2()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
 
         <div class="grid">
@@ -56,7 +57,7 @@
         	<img src="mocha.jpg" class="linkimage" onclick="location.href='product-view2.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
 
             <div class="select-display">
-        	<button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction2()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
 
         <div class="grid">
@@ -66,7 +67,7 @@
         	<img src="iced coffee.jpg" class="linkimage" onclick="location.href='product-view1.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
 
             <div class="select-display">
-        	<button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction2()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
 
         <div class="grid">
@@ -76,7 +77,7 @@
         	<img src="black.jpg" class="linkimage" onclick="location.href='product-view2.html';"><!-- image from: https://www.nespresso.com/recipes/int/en/19816AME-americano-by-nespresso.html--></div>
 
             <div class="select-display">
-        	<button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
+        	<button class="add" onclick="myFunction2()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
 
 	</div>
@@ -90,10 +91,21 @@
 </footer>
 
 <script>
-function myFunction() {
+function myFunction2() {
   var x = document.getElementById("snackbar");
   x.className = "show";
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 </script>
 

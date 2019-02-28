@@ -13,12 +13,13 @@
 </head>
 
 <body>
-<nav>
+ <nav class="topnav" id="myTopnav">
     <a href="main.html" class="nav">HOME</a>
     <a href="events.html" class="nav">EVENTS</a>
     <a href="products.html" class="nav">MENU</a>
     <a href="contact.html" class="nav">CONTACT</a>
     <i class="fas fa-shopping-cart nav-icon" onclick="location.href='checkout.html';" value="Go to Checkout"></i>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
   </nav>
 
   <div class="column-half">
@@ -53,7 +54,7 @@
   </div>
 </div>
 <div class="select-display">
-          <button class="add" onclick="myFunction()"><i class="fas fa-plus"></i>add to order</button></div>
+          <button class="add" onclick="myFunction2()"><i class="fas fa-plus"></i>add to order</button></div>
         </div>
         <div id="snackbar">Item successfully added to cart!</div>
 </div>
@@ -147,10 +148,21 @@ document.addEventListener("click", closeAllSelect);
 </script>
 
 <script>
-function myFunction() {
+function myFunction2() {
   var x = document.getElementById("snackbar");
   x.className = "show";
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 </script>
 </body>
