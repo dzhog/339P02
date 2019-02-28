@@ -30,7 +30,7 @@
 	        <div class="item">
 	        	<img src="iced coffee.jpg"> 
 	        	<h3> Iced Coffee &nbsp;&nbsp; Size: sml <br><br>
-	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h4>	    
+	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h3>	    
 	        	<p class="rightalign prices">Price: $2.50</p>
 	        	
 	        </div>
@@ -38,7 +38,7 @@
 	        <div class="item">
 	        	<img src="americano.jpg"> 
 	        	<h3> Classic Americano &nbsp;&nbsp; Size: med <br><br>
-	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h4>	    
+	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h3>	    
 	        	<p class="rightalign prices">Price: $4.50</p>
 	        	
 	        </div><br>
@@ -51,18 +51,9 @@
 					function openNav() {
 
             document.getElementById("sidebill").style.visibility = "visible";
-					  
-            if($(window).width()<720){
-              document.getElementById("sidebill").style.transform = "translate(0rem, 5rem)"
-              document.getElementById("foot").style.height = "0vh";
-            }
-            else{
-              
-              document.getElementById("main").style.marginLeft = "40rem";
-              document.getElementById("sidebill").style.transform = "translate(2rem)"
-              document.getElementById("sidebill").style.backgroundColor = "rgb(255,244,230)";
-          }
-
+            //document.getElementById("main").style.marginLeft = "40rem";
+            document.getElementById("sidebill").style.transform = "translate(0rem)"
+            document.getElementById("sidebill").style.backgroundColor = "rgb(255,244,230)";
 					}
 				</script>
 
@@ -84,7 +75,7 @@ function myFunction() {
         document.getElementById("sidebill").style.visibility = "hidden";
         document.getElementById("foot").style.height = "24vh";
         document.getElementById("sidebill").style.transform = "translate(-40rem)";
-        document.getElementById("main").style.marginLeft = "0rem";
+        //document.getElementById("main").style.marginLeft = "0rem";
         document.body.style.backgroundColor = "rgb(255,244,230)";
         document.getElementById("foot").style.backgroundColor = "rgb(66,50,50)";
       }
@@ -137,6 +128,7 @@ function myFunction() {
           <button class="rightalignbutt">Pay</button>
         </div>
     	</div>
+
 	        
     	
 	</body>
