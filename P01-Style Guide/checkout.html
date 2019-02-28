@@ -57,8 +57,9 @@
               document.getElementById("foot").style.height = "0vh";
             }
             else{
-              document.getElementById("sidebill").style.transform = "translate(0rem)"
-              document.getElementById("main").style.marginRight = "40rem";
+              
+              document.getElementById("main").style.marginLeft = "40rem";
+              document.getElementById("sidebill").style.transform = "translate(2rem)"
               document.getElementById("sidebill").style.backgroundColor = "rgb(255,244,230)";
           }
 
@@ -82,8 +83,8 @@ function myFunction() {
       function closeNav() {
         document.getElementById("sidebill").style.visibility = "hidden";
         document.getElementById("foot").style.height = "24vh";
-        document.getElementById("sidebill").style.transform = "translate(40rem)";
-        document.getElementById("main").style.marginRight = "0rem";
+        document.getElementById("sidebill").style.transform = "translate(-40rem)";
+        document.getElementById("main").style.marginLeft = "0rem";
         document.body.style.backgroundColor = "rgb(255,244,230)";
         document.getElementById("foot").style.backgroundColor = "rgb(66,50,50)";
       }
@@ -94,6 +95,7 @@ function myFunction() {
           <input type = "radio" name = "pmethod" value = "Mastercard">Mastercard
           <input type = "radio" name = "pmethod" value = "Paypal">Paypal
           <input type = "radio" name = "pmethod" value = "Other">Other
+
           <h2>Billing Information</h2>
           <input type = "text" name="fn" placeholder="First Name">
           <input type = "text" name="ln" placeholder="Last Name"><br>

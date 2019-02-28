@@ -78,7 +78,7 @@ footer {
 }
 
 .homebotbanner img{
-opacity: 0.4;
+  opacity: 0.4;
 }
 
 .itemtop{
@@ -333,14 +333,14 @@ button:hover, button:focus{
   position:absolute;
   margin-top: 3rem;
   padding:2rem;
-  right:0;
+  left:0;
   top:0;
 
   min-height: 80%;
   width:30rem;
   z-index: 1;
-  visibility: hidden;
-  transform: translate(40rem);
+  visibility: visible;
+  transform: translate(-40rem);
   transition: 0.5s;
 }
 
@@ -940,52 +940,17 @@ code {
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
-  .billing{
-    position:relative;
-    margin-top: 3rem;
-    padding:2rem;
-    right:0;
-    top:0;
-    transform: translate(40,10rem);
-    min-height: 80%;  
-    z-index: 200;
-  }
-  footer{
-    visibility: hidden;
-  }
+
 }
 
 /* #### Mobile Phones Landscape #### */
 @media screen and (max-device-width: 900px) and (orientation: landscape){
-   .billing{
-    position:relative;
-    margin-top: 3rem;
-    padding:2rem;
-    right:0;
-    top:0;
 
-    min-height: 80%;  
-    z-index: 200;
-  }
-    footer{
-    visibility: hidden;
-  }
 }
 
 /* #### Mobile Phones Portrait or Landscape #### */
 @media only screen and (max-width: 720px){
-  .prices{
 
-  }
-  .billing{
-    position:relative;
-    margin-top: 3rem;
-    padding:2rem;
-    right:0;
-    top:0;
-    min-height: 80%;  
-    z-index: 200;
-  }
 }
 
 /* #### iPhone 4+ Portrait or Landscape #### */
