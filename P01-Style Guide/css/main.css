@@ -720,6 +720,7 @@ code {
 
   .equalHW h3{
     margin-top: 0;
+    flex-shrink: 2;
   }
 
   .equalHW p{
