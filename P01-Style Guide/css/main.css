@@ -432,10 +432,7 @@ h4 {
   padding-right: 2rem;
   line-height: 1.7rem;
   margin-top: 0;
-}
-
-.prices{
-
+  padding-right: 0;
 }
 
 .rightalign{
@@ -567,7 +564,7 @@ nav img:hover{
   }
   .topnav.responsive a {
     padding-top: 0;
-    float: none;
+    float: center;
     display: block;
     text-align: center;
   }
