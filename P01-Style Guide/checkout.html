@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
 <head>
+  <meta charset="utf-8"/>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>P01 - Style Guide Template</title>
 
@@ -28,7 +30,7 @@
 
 	        <h2>Your Order</h2>
 	        <div class="item">
-	        	<img src="iced coffee.jpg" alt="Photo of a cup of iced coffee"> 
+	        	<img src="iced%20coffee.jpg" alt="Photo of a cup of iced coffee"> 
 	        	<h3> Iced Coffee &nbsp;&nbsp; Size: sml <br><br>
 	        	<button class="edit">edit</button>&nbsp;<button class="remove">remove</button></h3>	    
 	        	<p class="rightalign prices">Price: $2.50</p>
@@ -132,22 +134,22 @@ function myFunction() {
     	</div>
 
 	        
-    	
-	</body>
-
-<script>
-function myFunction2() {
-  var x = document.getElementById("snackbar");
-  x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
-</script>
-
+    <script>
+  function myFunction2() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
+</script>	
 <footer id="foot" class="centered-text equalHW-footer">
-	<p>Follow us on social media!</p>
-	<div>
+  <p>Follow us on social media!</p>
+  <div>
   <i class="fab fa-facebook fa-2x" onclick="location.href='styleguide.html';"></i>
   <i class="fab fa-instagram fa-2x" onclick="location.href='citations.html';"></i>
   <i class="fab fa-twitter-square fa-2x" onclick="location.href='https://github.com/dzhog/339P02';"></i></div>
 </footer>
+	</body>
+
+
+
 
